@@ -5,7 +5,8 @@
     </div>
   </div>
   <div class="header-right">
-    <div class="chat-over"><a href="#">チャットを終了する</a>
+    <div class="chat-over">
+      <%= link_to "チャットを終了する", room_path(@room), data: { turbo_method: :delete } %>
     </div>
   </div>
 </div>
